@@ -1,0 +1,11 @@
+{
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "vscode-pets.petSize": "medium",
+    "vscode-pets.position": "explorer",
+    "vscode-pets.theme": "forest",
+    "vscode-pets.petType": "cockatiel"
+}

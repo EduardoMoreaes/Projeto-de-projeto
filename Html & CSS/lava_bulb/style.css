@@ -1,0 +1,228 @@
+body{
+    padding: 0%;
+    margin: 0;
+    border: 0;
+    overflow-x: hidden;
+    margin-top: -1.7%;
+}
+
+html{
+    padding: 0%;
+    margin: 0;
+    border: 0;
+}
+/* barrinha de rolagem */
+body::-webkit-scrollbar{
+    width: 15px;
+    position: relative;
+}
+body::-webkit-scrollbar:hover{
+    width: 16px;
+}
+body::-webkit-scrollbar-track{
+    background-color: gray;
+    position: relative;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(65, 65, 65);
+    border-radius: 4px;
+}
+
+
+/* add um cabeçalho de exemplo */
+.header{
+    height: 130px;
+    width: 100%;
+    background-color: orangered;
+    margin: 0;
+    text-align: center;
+}
+
+.body{
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+}
+
+/* add titulo e input de texto pra exemplo */
+.textos{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    margin-left: 50px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#pesquisa{
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+}
+
+/* fazendo as bolha */
+.bolha{
+    position: inherit;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    animation: bolhas 10s infinite;
+    margin-left: -150%;
+    box-shadow: 20px 30px red,
+    243px 313px greenyellow,
+    348px 20px red,
+    158px -213px pink,
+    32px -674px green,
+    584px -312px green,
+    54px -32px red,
+    792px -56px orangered,
+    -38px 107px orange,
+    -123px 110px peru,
+    -243px 224px darkgreen,
+    -474px 10px darkred,
+    -210px 61px red,
+    -29px 80px green,
+    -82px 74px pink;
+    transition: 1s;
+}
+@keyframes bolhas {
+    0%{
+        margin-left: -150%;
+        transform: rotate(-180deg);
+        border-top-right-radius: 50%;
+        border-top-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        border-bottom-left-radius: 50%;
+    }
+    25%{
+    }
+    50%{
+        border-top-right-radius: 100%;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 100%;
+    }
+    100%{
+        transform: rotate(180deg);
+        width: 50px;
+        height: 50px;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        border-bottom-left-radius: 50%;
+        box-shadow: 20px 30px red,
+        -38px 107px orange,
+        -123px 110px peru,
+        -243px 224px darkgreen,
+        -474px 10px darkred,
+        -210px 61px red,
+        -29px 80px green,
+        -82px 74px pink,
+        243px 313px greenyellow,
+        348px 20px red,
+        158px -213px pink,
+        32px -674px green,
+        584px -312px green,
+        54px -32px red,
+        792px -56px orangered;
+        margin-left: 150%;
+    }
+}
+
+.top_right_bolha:before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 130px;
+    background-image: linear-gradient(180deg, red, orange);
+    top: -19%;
+    left: 114%;
+    transform: translate(-50%);
+    animation: wave_right 15s infinite linear;
+    transition: all 1s;
+  }
+  
+.top_left_bolha:before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 130px;
+  background-image: linear-gradient(180deg, orange, red);
+  top: -19%;
+  left: -14%;
+  transform: translate(-50%);
+  animation: wave_left 15s infinite linear;
+  transition: all 1s;
+}
+  
+@keyframes wave_right {
+  0% {
+            transform: translate(-50%) rotate(-360deg);
+            
+  }
+    
+    
+  100% {
+            transform: translate(-50%) rotate(360deg);
+  }
+}@keyframes wave_left {
+    0% {
+              transform: translate(-50%) rotate(360deg);
+              
+    }
+      
+      
+    100% {
+              transform: translate(-50%) rotate(-360deg);
+    }
+}
+
+.nav_bar{
+    background-color: blue;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+}
+
+
+/* sharigan de teste */
+.fundo{
+    background-color: red;
+    height: 360px;
+    width: 360px;
+    margin-left: 50%;
+    margin-top: 16.3%;
+    border-radius: 100%;
+    align-items: center;
+    border-color: black;
+    border-width: 5px;
+    border-style: ridge;
+}
+.sol{
+    top: 52.2%;
+    margin-left: 11.5%;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 100%;
+    position: center;
+    animation: system 2s infinite;
+    box-shadow:
+        15px -145px black,
+        -145px  45px black,
+        145px  45px black;
+    
+}
+@keyframes system {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
